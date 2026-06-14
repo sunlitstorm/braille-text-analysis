@@ -2,6 +2,8 @@
 
 A Python project that converts text into Braille, prints it in a readable format, and visualizes it using Turtle graphics.
 
+🔗 GitHub Repository: https://github.com/sunlitstorm/braille-text-analysis
+
 This project includes:
 - Letter, number, punctuation, and Grade 2 Braille support
 - Text-to-Braille translation
