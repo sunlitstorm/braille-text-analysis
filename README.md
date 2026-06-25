@@ -65,4 +65,3 @@ The system is designed around three layers:
 
 ---
 
-## Project Structure
