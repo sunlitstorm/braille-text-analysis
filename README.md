@@ -1,61 +1,68 @@
-# Braille Text Translator
+# Braille Accessibility System
 
-A Python project that converts text into Braille, prints it in a readable format, and visualizes it using Turtle graphics.
+An accessibility-focused project exploring how written language can be represented and experienced through multiple modalities: visual Braille, structured encoding, and audio output.
 
-🔗 GitHub Repository: https://github.com/sunlitstorm/braille-text-analysis
+The project began as a rule-based Braille translation engine in Python and evolved into a web-based interactive system with real-time Braille visualization and text-to-speech functionality.
 
-This project includes:
-- Letter, number, punctuation, and Grade 2 Braille support
-- Text-to-Braille translation
-- Console output formatting
-- Turtle-based visual Braille rendering
-- Number handling with Braille number sign (#)
+---
+
+## Overview
+
+This project investigates how natural language can be transformed into alternative accessible formats. It combines algorithmic text processing with interactive user interfaces to support multiple ways of engaging with written content.
+
+The system is designed around three layers:
+
+- A core Braille translation engine (Python)
+- A web-based interactive prototype (HTML/CSS/JavaScript)
+- A final integrated accessibility interface (portfolio implementation)
 
 ---
 
 ## Features
 
-### 1. Braille Dictionary
-Maps:
-- Letters (a–z)
-- Common contractions (e.g., "but", "can", "like")
-- Punctuation
-- Numbers (via number sign system)
-
-### 2. Text Translator
-Converts a sentence into a nested Braille structure that can be:
-- Printed in text form
-- Drawn visually using Turtle graphics
-
-### 3. Braille Printer
-Outputs Braille in aligned rows for readability in the terminal.
-
-### 4. Turtle Graphics Renderer
-Draws each Braille character as a 6-dot cell using Python Turtle.
-
-### 5. Number Handling
-Automatically inserts a number sign (`#`) before digit sequences so numbers are correctly interpreted in Braille.
+### Braille Translation Engine (Python)
+- Rule-based encoding system mapping English text to Braille
+- Support for:
+  - Letters (a–z)
+  - Numbers with number sign handling
+  - Punctuation
+  - Common contractions (Grade 1 / partial Grade 2 support)
+- Preprocessing pipeline for handling numeric sequences
+- Text-based Braille output formatting
+- Turtle graphics visualization of Braille cells
 
 ---
 
-## How It Works
-
-1. Input a sentence  
-2. Preprocess numbers (`handle_special_braille`)  
-3. Convert text into Braille (`translator`)  
-4. Output:
-   - Printed Braille (`print_braille`)
-   - Visual Braille (`draw_word`)
+### Web Prototype (HTML / CSS / JavaScript)
+- Real-time Braille toggle system
+- DOM-based text transformation
+- Interactive UI for switching between English and Braille views
+- Early exploration of accessibility-focused interface design
 
 ---
 
-## Example
+### Portfolio Integration
+- Braille view toggle embedded in personal portfolio website
+- Text-to-speech functionality using the browser Speech Synthesis API
+- Selectable text reading for user-controlled accessibility
+- Multi-modal interaction (visual + auditory + structural)
 
-```python
-sentence = "Every 7 computers, 2 students!"
-sentence = handle_special_braille(sentence.lower(), braille_dictionary)
+---
 
-lst = translator(sentence, braille_dictionary)
+## Tech Stack
 
-print_braille(lst)
-draw_word(lst)
+**Python**
+- Core logic and translation engine
+- Turtle graphics for visualization
+
+**Frontend**
+- HTML
+- CSS
+- JavaScript (DOM manipulation, event handling)
+
+**Web APIs**
+- SpeechSynthesis API (text-to-speech)
+
+---
+
+## Project Structure
